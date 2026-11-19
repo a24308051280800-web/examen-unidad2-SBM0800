@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Levi's</title>
+</head>
+<body bgcolor="#FFFFFF">
+  <table width="100%" bgcolor="#D00000" cellpadding="15">
+    <tr>
+      <td align="center">
+        <img src="logo.jpg" alt="Logo Levis" width="120" height="50">
+        <h1><font color="#FFFFFF">LEVI'S</font></h1>
+      </td>
+    </tr>
+  </table>
+  <table width="100%" bgcolor="#000000" cellpadding="10">
+    <tr>
+      <td align="center">
+        <a href="#inicio"><font color="#FFFFFF">Inicio de Sesion</font></a> | 
+        <a href="#registro"><font color="#FFFFFF">Registro</font></a> | 
+        <a href="#carrito"><font color="#FFFFFF">Carrito</font></a>
+      </td>
+    </tr>
+  </table>
+  <table width="100%" border="1" cellpadding="10">
+    <tr valign="top">
+      <td width="20%" bgcolor="#D00000">
+        <table width="100%" cellpadding="8">
+          <tr><td><a href="#mujer"><font color="#FFFFFF">Mujer</font></a></td></tr>
+          <tr><td><a href="#hombre"><font color="#FFFFFF">Hombre</font></a></td></tr>
+          <tr><td><a href="#kids"><font color="#FFFFFF">Kids</font></a></td></tr>
+          <tr><td><a href="#colecciones"><font color="#FFFFFF">Colecciones</font></a></td></tr>
+          <tr><td><a href="#rebajas"><font color="#FFFFFF">Rebajas</font></a></td></tr>
+        </table>
+      </td>
+      <td width="80%">
+        <a name="mujer"></a>
+        <h3>Mujer</h3>
+        <table width="100%" border="1" cellpadding="8">
+          <tr align="center">
+            <td><img src="1.jpg" width="100" height="100"><br>Jeans Mujer<br><button onclick="agregar()">Agregar</button></td>
+            <td><img src="2.jpg" width="100" height="100"><br>Chamarra mujer<br><button onclick="agregar()">Agregar</button></td>
+            <td><img src="3.jpg" width="100" height="100"><br>Playera mujer<br><button onclick="agregar()">Agregar</button></td>
+          </tr>
+        </table>
+        <a name="hombre"></a>
+        <h3>Hombre</h3>
+        <table width="100%" border="1" cellpadding="8">
+          <tr align="center">
+            <td><img src="4.jpg" width="100" height="100"><br>Jeans hombre<br><button onclick="agregar()">Agregar</button></td>
+            <td><img src="5.jpg" width="100" height="100"><br>Camisa hombre<br><button onclick="agregar()">Agregar</button></td>
+            <td><img src="6.jpg" width="100" height="100"><br>Sudadera hombre<br><button onclick="agregar()">Agregar</button></td>
+          </tr>
+        </table>
+        <a name="kids"></a>
+        <h3>Kids</h3>
+        <table width="100%" border="1" cellpadding="8">
+          <tr align="center">
+            <td><img src="7.jpg" width="100" height="100"><br>pantalon ninos<br><button onclick="agregar()">Agregar</button></td>
+            <td><img src="8.jpg" width="100" height="100"><br>Overol ninos<br><button onclick="agregar()">Agregar</button></td>
+            <td><img src="9.jpg" width="100" height="100"><br>Playera ninos<br><button onclick="agregar()">Agregar</button></td>
+          </tr>
+        </table>
+        <a name="colecciones"></a>
+        <h3>Colecciones</h3>
+        <table width="100%" border="1" cellpadding="8">
+          <tr align="center">
+            <td><img src="10.jpg" width="100" height="100"><br>Vintage 1950<br><button onclick="agregar()">Agregar</button></td>
+            <td><img src="11.jpg" width="100" height="100"><br>Made and Crafted<br><button onclick="agregar()">Agregar</button></td>
+            <td><img src="12.jpg" width="100" height="100"><br>Edicion Especial<br><button onclick="agregar()">Agregar</button></td>
+          </tr>
+        </table>
+        <a name="rebajas"></a>
+        <h3>Rebajas</h3>
+        <table width="100%" border="1" cellpadding="8">
+          <tr align="center">
+            <td><img src="13.jpg" width="100" height="100"><br>Shorts Mezclilla<br><button onclick="agregar()">Agregar</button></td>
+            <td><img src="14.jpg" width="100" height="100"><br>Gorra Roja<br><button onclick="agregar()">Agregar</button></td>
+            <td><img src="15.jpg" width="100" height="100"><br>Cinturon Piel<br><button onclick="agregar()">Agregar</button></td>
+          </tr>
+        </table>
+        <br>
+        <table width="100%" border="1" cellpadding="8">
+          <tr valign="top">
+            <td width="34%">
+              <a name="inicio"></a>
+              <b>Inicio de Sesion</b>
+              <form onsubmit="entrar(event)">
+                Usuario:<br><input type="text" id="usr" required><br>
+                Clave:<br><input type="password" id="pwd" required><br><br>
+                <input type="submit" value="Entrar">
+              </form>
+              <p id="estado">Sin sesion iniciada</p>
+            </td>
+            <td width="33%">
+              <a name="registro"></a>
+              <b>Registro</b>
+              <form onsubmit="event.preventDefault()">
+                Nombre:<br><input type="text"><br>
+                Correo:<br><input type="email"><br><br>
+                <input type="submit" value="Registrar">
+              </form>
+            </td>
+            <td width="33%">
+              <a name="carrito"></a>
+              <b>Carrito</b>
+              <p>Articulos: <b id="total">0</b></p>
+              <button onclick="document.getElementById('total').innerText='0'">Vaciar</button>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <table width="100%" bgcolor="#000000" cellpadding="10">
+    <tr>
+      <td align="center">
+        <font color="#FFFFFF">Badiola Munoz Sergio 5J 0800 </font>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
